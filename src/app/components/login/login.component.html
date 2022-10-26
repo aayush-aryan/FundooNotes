@@ -15,7 +15,7 @@
             <p> Use your FunDoo Account </p>
         </div>
         <div class="SecondInnerDiv">
-            
+            <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
                 <div>
                     <mat-form-field appearance="outline" class="email">
                         <mat-label>Username</mat-label>
@@ -47,6 +47,7 @@
                         <button class="mat-raised-button"> Next </button>
                     </div>
                 </div>
+            </form>
         </div> 
     </div>
 
