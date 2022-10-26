@@ -11,6 +11,7 @@
         <div>
             <p class="span">Reset password</p>
         </div>
+        <form [formGroup]="resetForm" (ngSubmit)="onSubmit()">
             <div>
                 <div class="para">
                     Enter new password
@@ -34,6 +35,7 @@
                 </mat-form-field>
             </div>
             <button class="mat-raised-button">Save</button>
+        </form>
     </div>
 
 </div>
