@@ -1,0 +1,39 @@
+<div class="OuterDiv">
+    <div class="innerDiv">
+        <div class="funDo">
+            <b class="F">F</b>
+            <b class="u">u</b>
+            <b class="n">n</b>
+            <b class="D">D</b>
+            <b class="o">o</b>
+            <b class="oo">o</b>
+        </div>
+        <div>
+            <p class="span">Reset password</p>
+        </div>
+            <div>
+                <div class="para">
+                    Enter new password
+                </div>
+                <mat-form-field appearance="outline" class="PasswordDiv">
+                    <mat-label>New password</mat-label>
+                    <input matInput placeholder="" formControlName="newpassword">
+                    <mat-error>Enter valid New password</mat-error>
+                </mat-form-field><br>
+                <span class="par">
+                  Use 8 or more characters with a mix of letters, numbers & symbols
+                </span>
+                <br>
+                <div class="para">
+                    Confirm new password
+                </div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Confirm new password</mat-label>
+                    <input matInput placeholder="" formControlName="confirmnewPassword">
+                    <mat-error>Enter valid New password</mat-error>
+                </mat-form-field>
+            </div>
+            <button class="mat-raised-button">Save</button>
+    </div>
+
+</div>

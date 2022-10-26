@@ -1,0 +1,77 @@
+.OuterDiv{
+    width: 97vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerDiv{
+    border: 1px solid rgb(230, 230, 230);
+    width: 30%;
+    height: 70%;
+    padding: 48px 36px 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.funDo{
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.F{
+    color: #1a73e8;
+}
+.u{
+    color: red;
+}
+.n{
+    color: orange;
+}
+.D{
+    color: goldenrod;
+}
+.o{
+    color: lightblue;
+}
+.oo{
+    color:lightpink;
+}
+.span{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.para{
+    font-family:roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    font-size: 14px;
+}
+mat-form-field{
+    box-sizing: border-box;
+    width: 370px;
+    float: left;
+}
+ .PasswordDiv{
+     height: 60px;
+    margin-right: 20px;
+}
+.par{
+    font-size: 14px;
+    display: block;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+.mat-raised-button{
+    background-color:#1a73e8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 72%;
+    margin-top: 25px;
+
+}
