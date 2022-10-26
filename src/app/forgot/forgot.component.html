@@ -14,6 +14,7 @@
         <div class="rec">
             <p> Enter your recovery email </p>
         </div>
+        <form [formGroup]="forgotform" (ngSubmit)="onSubmit()">
             <div class="email">
                 <mat-form-field appearance="outline">
                     <mat-label>username</mat-label>
@@ -22,5 +23,6 @@
                 </mat-form-field>
             </div>
             <button class="mat-raised-button">Next</button>
+        </form>
     </div>
 </div>
