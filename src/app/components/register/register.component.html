@@ -1,67 +1,69 @@
-<div class="form-container">
-  <div class="form">
-    <div class="form-text">
-      <div class="form-head-text">
-
-        <h1>FundooNotes</h1>
-        <h2>Create your FundooNotes Account</h2>
+<div class="OuterDiv">
+  <div class="FirstInnerDiv">
+      <div class="funDo">
+          <b class="F">F</b>
+          <b class="u">u</b>
+          <b class="n">n</b>
+          <b class="D">D</b>
+          <b class="o">o</b>
+          <b class="o">o</b>
       </div>
-      <div class="form-content">
-        <div class="names">
-          <mat-form-field class="form-field" appearance="outline">
-            <mat-label>First name</mat-label>
-            <input matInput placeholder="First Name">
-            <mat-error>Enter valid first name</mat-error>
-          </mat-form-field>
-
-          <mat-form-field class="form-field" appearance="outline">
-            <mat-label>Last name</mat-label>
-            <input matInput placeholder="Last Name">
-            <mat-error>Enter valid last name</mat-error>
-          </mat-form-field>
-        </div>
-
-        <mat-form-field class="form-field" appearance="outline">
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="email" />
-          <mat-hint>You can use letters and numbers</mat-hint>
-        </mat-form-field>
-
-        <div>
-          <mat-form-field class="form-field" appearance="outline">
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="password" />
-            <mat-hint>
-              Use 8 or more characters with a mix of letters, numbers & symbols
-            </mat-hint>
-          </mat-form-field>
-
-          <mat-form-field class="form-field" appearance="outline">
-            <mat-label>Confirm</mat-label>
-            <input matInput placeholder="confirm" />
-          </mat-form-field>
-        </div>
-        <div class="ShowCheckbox">
-          <input style="cursor: pointer; " type="checkbox" id="icon">Show password
-        </div>
+      <div class="InnerDiv"> 
+          <div class="myDiv">
+              <span>
+                  <h1>Create Your FunDoo Account</h1>
+              </span>
+              <div class="nameDiv">
+                  <mat-form-field appearance="outline" class="firstNameDiv">
+                      <mat-label>First Name</mat-label>
+                      <input matInput placeholder="">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline">
+                      <mat-label>Last Name</mat-label>
+                      <input matInput placeholder="">
+                  </mat-form-field><br>
+              </div>
+              <mat-form-field appearance="outline" class="UserName">
+                  <mat-label>User Name</mat-label>
+                  <input matInput placeholder="">
+              </mat-form-field>
+              <div class="para">
+                  <p>You can use letters , numbers & periods </p>
+              </div>
+              <br>
+              <div class="nameDiv">
+                  <mat-form-field appearance="outline" class="PasswordDiv">
+                      <mat-label>Password</mat-label>
+                      <input matInput placeholder="">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="Confirm">
+                      <mat-label>Confirm</mat-label>
+                      <input matInput placeholder="">
+                  </mat-form-field>
+              </div>
+              <div class="para">
+              <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+              </div>
+              <label style="cursor:pointer;">
+              <input type="checkbox">
+              Show Password</label>
+              <div class="matButton">
+                  <div class="loginButton">
+                      <button class="login" routerLink="/login"><b>Sign in instead</b></button>
+                  </div>
+                  <div class="NextButton">
+                      <button class="mat-raised-button">Next</button>
+                  </div>
+              </div>
+          </div>
+          <div class="imageDiv">
+              <div>
+                  <img class="image" src="../../../assets/account.svg" alt="">
+              </div>
+              <div class="">
+                  <p>One account. All of FunDoo working for you.</p>
+              </div>
+          </div>
       </div>
-
-      <div class="form-footer">
-        <div>
-          <button mat-button color="primary">
-            Login
-          </button>
-        </div>
-        <div>
-          <button mat-flat-button color="primary">
-            Sign Up
-          </button>
-        </div>
-       
-      </div>
-    </div>
-    <div>
-      <img src='../../../assets/account.svg' alt="" width='244' height='244' />
-    </div>
   </div>
-  </div>
+</div>

@@ -9,12 +9,17 @@ import { LoginComponent } from './components/login/login.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ForgotComponent } from './forgot/forgot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,10 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule,
+    FlexLayoutModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

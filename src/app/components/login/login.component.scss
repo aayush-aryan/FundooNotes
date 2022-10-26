@@ -1,0 +1,120 @@
+.OuterDiv{
+    width: 97vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.InnerDiv{
+    border:1px solid rgb(230, 230, 230);
+    width: 30%;
+    height: 70%;
+    margin: 20px;
+    padding: 45px 35px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.SecondInnerDiv{
+    display:block;
+}
+.funDo{
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.F{
+    color: #1a73e8;
+}
+.u{
+    color: red;
+}
+.n{
+    color: orange;
+}
+.D{
+    color: goldenrod;
+}
+.o{
+    color: lightblue;
+}
+.oo{
+    color:lightpink;
+}
+.span{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.email{
+    width: 100%;
+    padding-bottom: 0px;
+}
+.password{
+    width: 100%;
+    height: 60px;
+}
+.Forgot{
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+    text-align: left;
+    border: 0;
+}
+.matButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    padding: 5px;
+    //padding-left: 0px;
+    border:2px solid red;
+    
+}
+.Instead{
+    font-size: 14px;
+    font-style: normal;
+    width: 150px;
+    //margin-bottom: 16px;
+    //padding-top: 5px;
+    //border-radius: 4px;
+    color: #1a73e8;
+    //display: inline-block;
+    //letter-spacing: 0.1px;
+    font-weight: 500;
+    // outline: 0;
+    // position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    //padding: 0;
+    //text-align: left;
+    //border: 0;
+}
+
+.next{
+    margin-left: 200px;
+}
+.mat-raised-button{
+    background-color:#1a73e8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
