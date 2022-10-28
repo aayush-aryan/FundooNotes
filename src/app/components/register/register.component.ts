@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UserService } from 'src/app/services/userService/user-service.service';
+
+// import { UserserviceService } from 'src/app/services/userService/userservice.service';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
   registerForm !: FormGroup;
-  constructor(private formBuilder: FormBuilder) { 
+  constructor(private formBuilder: FormBuilder,private user: UserService) { 
    
   }
 
@@ -21,6 +24,24 @@ export class RegisterComponent implements OnInit {
       confirmPassword: ['', Validators.required]
     });
   }
-  onSubmit() {}
+  onSubmit() {
+      // stop here if form is invalid
+    if (this.registerForm.valid) {
+      console.log("valid data", this.registerForm.value);
+      console.log("do api call")
+      let data = {
+        FirstName: this.registerForm.value.firstname,
+        LastName: this.registerForm.value.lastname,
+        Email: this.registerForm.value.username,
+        Password: this.registerForm.value.password
+      }
+      this.user.signup(data).subscribe((result: any) => console.log(result))
+    }
+    else
+    {
+      console.log('invalid data',this.registerForm.value);
+      console.log("api call will not occur")
+    }
+  }
 }
  

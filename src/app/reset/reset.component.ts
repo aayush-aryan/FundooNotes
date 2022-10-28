@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UserService } from '../services/userService/user-service.service';
 
 @Component({
   selector: 'app-reset',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ResetComponent implements OnInit {
   resetForm !: FormGroup
 
-  constructor(private formBuilder:FormBuilder) { }
+  constructor(private formBuilder:FormBuilder,private user:UserService) { }
 
   ngOnInit(): void {
     this.resetForm=this.formBuilder.group({
@@ -17,5 +18,19 @@ export class ResetComponent implements OnInit {
       confirmnewPassword: ['',Validators.required]
     });
   }
-  onSubmit(){}
+  onSubmit(){
+    if (this.resetForm.valid) {
+      console.log("valid data", this.resetForm.value);
+      console.log("do api call")
+      let data = {
+        newPassword: this.resetForm.value.newpassword,
+        confirmNewPassword: this.resetForm.value.confirmnewPassword
+      }
+      this.user.reset(data).subscribe((result: any) => console.log(result))
+    }
+    else {
+      console.log('invalid data', this.resetForm.value);
+      console.log("api call will not occur")
+    }
+  }
 }
