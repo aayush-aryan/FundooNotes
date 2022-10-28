@@ -21,6 +21,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 // import {MatListModule} from '@angular/material/list';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import { GetallNotesComponent } from './components/getall-notes/getall-notes.component';
+import { ArchieveComponent } from './components/archieve/archieve.component';
+import { TrashComponent } from './components/trash/trash.component';
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import {MatIconModule} from '@angular/material/icon';
     LoginComponent,
     ForgotComponent,
     ResetComponent,
-    DashboardComponent
+    DashboardComponent,
+    GetallNotesComponent,
+    ArchieveComponent,
+    TrashComponent
 
   ],
   imports: [
