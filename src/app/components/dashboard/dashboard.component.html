@@ -47,6 +47,9 @@
                 <mat-nav-list>
                     <div class="NoteDi">
                         <div role="button" class="NoteD " routerLink="/Dashboard/Notes">
+                            <div class="NoteDiv">
+                                <span class="material-symbols-outlined">tips_and_updates</span>
+                            </div>
                             <div class="IconDiv">
                                 <a mat-list-item>Notes</a>
                             </div>
@@ -54,6 +57,9 @@
                     </div>
                     <div class="NoteDi">
                         <div role="button" class="NoteD" routerLink=".">
+                            <div class="NoteDiv">
+                                <span class="material-symbols-outlined">notifications</span>
+                            </div>
                             <div class="IconDiv">
                                 <a mat-list-item>Reminders</a>
                             </div>
@@ -61,6 +67,9 @@
                     </div>
                     <div class="NoteDi">
                         <div role="button" class="NoteD" routerLink=".">
+                            <div class="NoteDiv">
+                                <span class="material-symbols-outlined">edit</span>
+                            </div>
                             <div class="IconDiv">
                                 <a mat-list-item>Edit Labels</a>
                             </div>
@@ -68,16 +77,23 @@
                     </div>
                     <div class="NoteDi">
                         <div role="button" class="NoteD" routerLink="/Dashboard/Archieve">
+                            <div class="NoteDiv">
+                                <span class="material-symbols-outlined">archive</span>
+                            </div>
                             <div class="IconDiv">
                                 <a mat-list-item>Archive</a>
                             </div>
                         </div>
                     </div>
                     <div class="NoteDi">
-                        <div role="button" class="NoteD">
-                            <div class="IconDiv" routerLink="/Dashboard/Trash">
-                                <a mat-list-item>Trash</a>
-                            </div>
+                        <div role="button" class="NoteD" routerLink="/Dashboard/Trash">
+                                <div class="NoteDiv">
+                                    <span class="material-symbols-outlined">delete</span>
+
+                                </div>
+                                <div class="IconDiv">
+                                    <a mat-list-item>Trash</a>
+                                </div>
                         </div>
                     </div>
                 </mat-nav-list>
