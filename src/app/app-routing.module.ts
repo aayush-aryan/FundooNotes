@@ -8,6 +8,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GetallNotesComponent } from './components/getall-notes/getall-notes.component';
 import { ArchieveComponent } from './components/archieve/archieve.component';
 import { TrashComponent } from './components/trash/trash.component';
+import { CreateNoteComponent } from './components/create-note/create-note.component';
+import { DisplayNoteComponent } from './components/display-note/display-note.component';
+import { IconComponent } from './components/icon/icon.component';
 
 const routes: Routes = [
   {path:'register', component:RegisterComponent},
@@ -19,6 +22,10 @@ const routes: Routes = [
     {path:'Notes',component:GetallNotesComponent},
     {path:'Archieve',component:ArchieveComponent},
     {path:'Trash',component:TrashComponent},
+    {path:'app-create-note',component:CreateNoteComponent},
+    {path:'display-note',component:DisplayNoteComponent},
+    {path:'app-icon',component:IconComponent}  ,
+    {path:'app-getall-notes',component:GetallNotesComponent}
 ]}
 
 ];

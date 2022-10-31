@@ -41,12 +41,12 @@
         </div>
     </div>
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-        <mat-sidenav style="width: 300px;" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+        <mat-sidenav style="width: 200px;" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
             [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
             <div class="contDiv">
                 <mat-nav-list>
                     <div class="NoteDi">
-                        <div role="button" class="NoteD " routerLink="/Dashboard/Notes">
+                        <div role="button" class="NoteD " routerLink="/Dashboard/app-getall-notes">
                             <div class="NoteDiv">
                                 <span class="material-symbols-outlined">tips_and_updates</span>
                             </div>
@@ -89,7 +89,6 @@
                         <div role="button" class="NoteD" routerLink="/Dashboard/Trash">
                                 <div class="NoteDiv">
                                     <span class="material-symbols-outlined">delete</span>
-
                                 </div>
                                 <div class="IconDiv">
                                     <a mat-list-item>Trash</a>
@@ -99,7 +98,6 @@
                 </mat-nav-list>
             </div>
         </mat-sidenav>
-
         <mat-sidenav-content>
             <router-outlet></router-outlet>
         </mat-sidenav-content>

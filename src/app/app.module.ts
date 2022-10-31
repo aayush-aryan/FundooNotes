@@ -24,6 +24,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { GetallNotesComponent } from './components/getall-notes/getall-notes.component';
 import { ArchieveComponent } from './components/archieve/archieve.component';
 import { TrashComponent } from './components/trash/trash.component';
+import { CreateNoteComponent } from './components/create-note/create-note.component';
+import { DisplayNoteComponent } from './components/display-note/display-note.component';
+import { IconComponent } from './components/icon/icon.component';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { TrashComponent } from './components/trash/trash.component';
     DashboardComponent,
     GetallNotesComponent,
     ArchieveComponent,
-    TrashComponent
+    TrashComponent,
+    CreateNoteComponent,
+    DisplayNoteComponent,
+    IconComponent
 
   ],
   imports: [

@@ -27,7 +27,10 @@ export class LoginComponent implements OnInit {
         Email: this.signinForm.value.username,
         Password: this.signinForm.value.password
       }
-      this.user.signin(data).subscribe((result: any) => console.log(result))
+      this.user.signin(data).subscribe((result: any) => {
+        console.log(result.securityToken);
+      localStorage.setItem('Token',result.securityToken);;
+    });
     }
     else {
       console.log('invalid data', this.signinForm.value);

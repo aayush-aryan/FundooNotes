@@ -37,7 +37,7 @@ export class UserService {
     let header = {
       header: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization': 'token'
+        'Authorization': 'Token'
       })
     }
     return this.httpService.postService('https://localhost:13885/api/User/ForgetPassword?emailId=log2aayusharyan%40gmail.com', data, false, header)
