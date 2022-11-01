@@ -1,10 +1,16 @@
 
-                <mat-card class ="card">
-                <mat-card-title> title</mat-card-title>
-            
-                <mat-card-content><p>description</p></mat-card-content>
-                <div class="icondiv" FxLayoutAlign="space-between centre">
-                    <app-icon></app-icon>
+       <div fxLayout="row wrap" fxLayoutGap="10px grid" style="padding-top: 2%; padding-left: 10%;">
+            <mat-card class="card" *ngFor="let note of NoteArray">
+
+                <mat-card-title style="padding:8px;"> {{note.title}}</mat-card-title>
+
+                <mat-card-content>
+                    <p style="padding:8px;">{{note.description}}</p>
+                </mat-card-content>
+
+                <div class="icondiv" FxLayoutAlign="space-between centre" >
+                    <app-icon ></app-icon>
+
                 </div>
-                </mat-card>
-            
+            </mat-card>
+        </div>

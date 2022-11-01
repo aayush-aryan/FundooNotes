@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-display-note',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-note.component.scss']
 })
 export class DisplayNoteComponent implements OnInit {
+ // note: any
+ // FilterMsg:string=""
+  @Input() NoteArray: any
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
