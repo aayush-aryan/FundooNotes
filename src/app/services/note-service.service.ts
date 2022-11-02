@@ -33,4 +33,28 @@ getNoteList(){
     return this.http.getService("https://localhost:13885/api/Note/GetAllNotes", true,header)
 
 }
+updateNote(noteId:any,reqdata: any) {
+  console.log("hello",reqdata);
+  console.log(this.token);
+
+  let header = {
+    headers: new HttpHeaders({
+      'Content-type': 'application/json',
+      'Authorization':"Bearer " + this.token
+    })
+  }
+  return this.http.putService("https://localhost:13885/api/Note/UpdateUserNote?noteId="+noteId,reqdata, true, header)
+}
+arcieveNote(reqdata: any) {
+  console.log("Request",reqdata);
+  console.log(this.token);
+
+  let header = {
+    headers: new HttpHeaders({
+      'Content-type': 'application/json',
+      'Authorization':'Bearer ' + this.token
+    })
+  }
+  return this.http.putService(`https://localhost:13885/api/Note/ArchieveNotes?noteID=${reqdata.noteID}`, reqdata, true, header)
+}
 }

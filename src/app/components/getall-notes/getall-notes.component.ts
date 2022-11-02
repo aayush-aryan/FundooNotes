@@ -16,7 +16,9 @@ export class GetallNotesComponent implements OnInit {
     this.note.getNoteList().subscribe((response:any)=>{
       console.log(response);
       this.noteList=response.result;
-      //})
+      this.noteList = this.noteList.filter((obj: any) => {
+        return obj.isArchieve===false
+      })
     })
   }
   receiveMessage(event:any){

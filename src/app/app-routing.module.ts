@@ -24,10 +24,9 @@ const routes: Routes = [
     {path:'Trash',component:TrashComponent},
     {path:'app-create-note',component:CreateNoteComponent},
     {path:'display-note',component:DisplayNoteComponent},
-    {path:'app-icon',component:IconComponent}  ,
+    {path:'app-icon',component:IconComponent} ,
     {path:'app-getall-notes',component:GetallNotesComponent}
 ]}
-
 ];
 
 @NgModule({

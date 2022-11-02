@@ -11,7 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ForgotComponent } from './forgot/forgot.component';
 import { ResetComponent } from './reset/reset.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -27,7 +27,9 @@ import { TrashComponent } from './components/trash/trash.component';
 import { CreateNoteComponent } from './components/create-note/create-note.component';
 import { DisplayNoteComponent } from './components/display-note/display-note.component';
 import { IconComponent } from './components/icon/icon.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { UpdateNotesComponent } from './components/update-notes/update-notes.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -42,8 +44,8 @@ import { IconComponent } from './components/icon/icon.component';
     TrashComponent,
     CreateNoteComponent,
     DisplayNoteComponent,
-    IconComponent
-
+    IconComponent,
+    UpdateNotesComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,10 @@ import { IconComponent } from './components/icon/icon.component';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule
 
   ],
   providers: [],
