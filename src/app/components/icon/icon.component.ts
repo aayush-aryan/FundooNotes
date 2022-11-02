@@ -10,7 +10,7 @@ export class IconComponent implements OnInit {
   @Input() noteCard: any;
   noteID: any;
   isArchieve:boolean=false;
-  
+
   constructor(private note:NoteServiceService) { }
   ngOnInit(): void {
   }
@@ -24,5 +24,10 @@ export class IconComponent implements OnInit {
       console.log(Response);
     })
 
+  }
+  trash(note: any) {
+    this.note.trashNote(this.noteCard.noteId).subscribe((response: any) => {
+      console.log(response);
+    })
   }
 }

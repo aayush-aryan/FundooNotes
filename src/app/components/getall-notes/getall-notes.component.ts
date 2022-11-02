@@ -17,7 +17,7 @@ export class GetallNotesComponent implements OnInit {
       console.log(response);
       this.noteList=response.result;
       this.noteList = this.noteList.filter((obj: any) => {
-        return obj.isArchieve===false
+        return obj.isArchieve===false && obj.isTrash===false
       })
     })
   }

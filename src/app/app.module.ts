@@ -30,6 +30,7 @@ import { IconComponent } from './components/icon/icon.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UpdateNotesComponent } from './components/update-notes/update-notes.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatIconModule,
     FormsModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
 
   ],
   providers: [],

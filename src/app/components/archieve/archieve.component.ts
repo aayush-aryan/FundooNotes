@@ -18,7 +18,7 @@ export class ArchieveComponent implements OnInit {
       console.log(response.result);
       this.noteList = response.result;
       this.noteList = this.noteList.filter((obj: any) => {
-        return obj.isArchieve===true
+        return obj.isArchieve===true && obj.isTrash===false
       })
 
     })
