@@ -13,7 +13,7 @@ export class UpdateNotesComponent implements OnInit {
   description: any
  // bgColour: any
   noteId: any
-  // @Output() refreshEvent = new EventEmitter<string>();
+  
   constructor(public note: NoteServiceService,
     public dialogRef: MatDialogRef<UpdateNotesComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }

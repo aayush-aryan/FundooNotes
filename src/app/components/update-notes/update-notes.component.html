@@ -1,14 +1,17 @@
 <div class="note">
 
-    <div fxLayout="row" fxLayoutAlign="space-between center">
-       <input class="mat-title" placeholder="Title" [(ngModel)]="title">
+    <div class="mat-title"  fxLayout="row" fxLayoutAlign="space-between center">
+       <input placeholder="Title" [(ngModel)]="title">
     </div>
  
-    <div fxLayout="row" fxLayoutAlign="space-between center">
-       <input class="mat-title" placeholder="Description" [(ngModel)]="description">
-    </div>
-    <app-icon style="margin-top: 30px;"></app-icon>
-    <div fxLayoutAlign="end end"  >
+    <div class="mat-title">
+       <input  placeholder="Description" [(ngModel)]="description">
+    </div >
+    <div class="appicon">
+    <div  fxLayout="row" fxLayoutAlign="space-between center" >
+    <app-icon class="icon"></app-icon>
+    
     <button mat-button class="button" (click)="onNoClick()">update</button>
    </div>
+</div>
  </div>
