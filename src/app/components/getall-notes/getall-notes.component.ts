@@ -11,6 +11,7 @@ export class GetallNotesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllNote();
+    
   }
   getAllNote(){
     this.note.getNoteList().subscribe((response:any)=>{
@@ -20,8 +21,7 @@ export class GetallNotesComponent implements OnInit {
         return obj.isArchieve===false && obj.isTrash===false
       })
     })
+    
   }
-  receiveMessage(event:any){
-    this.getAllNote();
-  }
+  
 }

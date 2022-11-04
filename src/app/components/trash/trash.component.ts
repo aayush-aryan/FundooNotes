@@ -25,4 +25,5 @@ export class TrashComponent implements OnInit {
     })
     console.log("call api");
   }
+ 
 }

@@ -13,11 +13,11 @@ export class DisplayNoteComponent implements OnInit {
   bgColour:any
   @Input() NoteArray: any
   @Output() refreshEvent = new EventEmitter<any>();
-
+ 
+  
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-
   }
   openDialog(note: any): void {
     const dialogRef = this.dialog.open(UpdateNotesComponent, {
@@ -30,13 +30,5 @@ export class DisplayNoteComponent implements OnInit {
       console.log('The dialog was closed');
     });
   }
-  receivedMessage(event: any) {
-    console.log(event);
-    this.refreshEvent.emit("hello")
-  }
-  // getNoteColor(note :any){
-  //   this.note.getColorNote().subscribe((response:any)=>{
-  //     console.log(response);
-  //   })
-  // }
+
 }

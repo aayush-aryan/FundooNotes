@@ -32,17 +32,20 @@ export class IconComponent implements OnInit {
     console.log(reqdata);
     this.note.arcieveNote(reqdata).subscribe((Response: any) => {
       console.log(Response);
+      window.location.reload();
     })
   }
 
   trash() {
     this.note.trashNote(this.noteCard.noteId).subscribe((response: any) => {
       console.log(response);
+      window.location.reload();
     })
   }
   getNoteColor(colour :any){
     this.note.getColorNote(this.noteCard.noteId,colour).subscribe((response:any)=>{
       console.log(response);
+      window.location.reload();
     })
   }
 }
