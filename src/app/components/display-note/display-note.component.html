@@ -1,6 +1,7 @@
 
        <div fxLayout="row wrap" fxLayoutGap="10px grid" style="padding-top: 2%; padding-left: 10%;">
-            <mat-card class="card" *ngFor="let note of NoteArray">
+        <div *ngFor="let note of NoteArray">
+            <mat-card class="card" [style.background]="note.bgColour" >
 
                 <mat-card-title style="padding:8px;" (click)="openDialog(note)"> {{note.title}}</mat-card-title>
 
@@ -13,4 +14,5 @@
 
                 </div>
             </mat-card>
+        </div>
         </div>

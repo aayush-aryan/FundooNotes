@@ -10,6 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class DisplayNoteComponent implements OnInit {
   note: any
   FilterMsg:string=""
+  bgColour:any
   @Input() NoteArray: any
   @Output() refreshEvent = new EventEmitter<any>();
 
@@ -33,4 +34,9 @@ export class DisplayNoteComponent implements OnInit {
     console.log(event);
     this.refreshEvent.emit("hello")
   }
+  // getNoteColor(note :any){
+  //   this.note.getColorNote().subscribe((response:any)=>{
+  //     console.log(response);
+  //   })
+  // }
 }

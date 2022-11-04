@@ -13,7 +13,7 @@ export class IconComponent implements OnInit {
   noteID: any;
   isArchive: boolean = false;
   isTrash: boolean = false;
-
+  colorsArr =[{Colorcode:"pink"},{Colorcode:"yellow"},{Colorcode:"orange"},{Colorcode:"rgb(255,99,71)"},{Colorcode:"rgb(152,251,152)"},{Colorcode:"Teal"},{Colorcode:"rgb(106,90,205)"},{Colorcode:"rgb(240,230,140)"},{Colorcode:"rgb(238,130,238)"},{Colorcode:"rgb(255,160,122)"}];
   constructor(private note:NoteServiceService,private activatedRoute: ActivatedRoute) { }
   ngOnInit(): void {
     let componentNote = this.activatedRoute.snapshot.component;
@@ -37,6 +37,11 @@ export class IconComponent implements OnInit {
 
   trash() {
     this.note.trashNote(this.noteCard.noteId).subscribe((response: any) => {
+      console.log(response);
+    })
+  }
+  getNoteColor(colour :any){
+    this.note.getColorNote(this.noteCard.noteId,colour).subscribe((response:any)=>{
       console.log(response);
     })
   }

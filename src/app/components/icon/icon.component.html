@@ -6,8 +6,17 @@
     <div role="button" class="add" *ngIf="!isTrash">
         <img class="divImg" src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.svg">
     </div>
-    <div role="button" class="add" *ngIf="!isTrash">
+
+    <div role="button" class="add" *ngIf="!isTrash" matTooltip="Background color" [matMenuTriggerFor]="color">
         <img class="divImg" src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.svg">
+        <mat-menu #color="matMenu">
+            <div fxLayout="row wrap" style="padding-left: 8px;">
+                <div *ngFor="let color of colorsArr" class="colorBox">
+                    <button class="colors" mat-icon-button mat-raised-button [style.background]="color?.Colorcode"
+                        (click)="getNoteColor(color?.Colorcode)"></button>
+                </div>
+            </div>
+        </mat-menu>
     </div>
     <div role="button" class="add" *ngIf="!isTrash">
         <img class="divImg" src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.svg">
@@ -34,7 +43,7 @@
     </div>
     <div *ngIf="isTrash" fxLayout="row" fxLayourAlign="center">
         <div  matTooltip="Delete forever">
-            <img class="icons" src="../../../assets/Delete.png">
+            <img class="icons" src="../../../assets/Delete.png" >
         </div>
 
         <div class="buttons"  matTooltip="Restore">

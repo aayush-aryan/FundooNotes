@@ -33,6 +33,19 @@ getNoteList(){
     return this.http.getService("https://localhost:13885/api/Note/GetAllNotes", true,header)
 
 }
+getColorNote(noteId: any,colour :any){
+
+  let header= {
+    headers: new HttpHeaders({
+
+      'Content-type': 'application/json',
+      'Authorization': "Bearer "+this.token
+    })
+  }
+    return this.http.putService(`https://localhost:13885/api/Note/ColorNotes?noteID=${noteId}&color=${colour}`,{}, true,header)
+
+}
+
 updateNote(noteId:any,reqdata: any) {
   console.log("hello",reqdata);
   console.log(this.token);
